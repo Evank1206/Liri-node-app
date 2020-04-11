@@ -32,14 +32,12 @@ const token = keys.spotify.secret;
 
 const url = "https://api.spotify.com/v1/users/" + userID + "/playlists";
 
-axios.get({url, headers: {"Authorization":token } }, function (err, res) {
-
-  const playlists = JSON.parse(res.body)
+axios.get({
+  url:url,
+  auth: token
+}).then(function(response){
+  console.log(response);
   
-  const url = playlists.item[0].href;
-  // console.log(url);
-
-
 })
 
 
