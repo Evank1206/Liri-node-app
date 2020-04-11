@@ -1,11 +1,14 @@
+// require axios npm package
 const axios = require("axios");
-
+// hard coded artist
 const artist = "Celine Dion";
+// main url for getting data
 var url = "http://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-
+// axis for pull data from up-url
 axios.get(url).then(function (response) {
-
+  // main data response
   // console.log(response.data[0]);
+  // sort it for certain title
   console.log("artist: " + response.data[0].artist.name);
   console.log("artist: " + response.data[0].artist.thumb_url);
   console.log("artist: " + response.data[0].artist.url);
@@ -13,7 +16,7 @@ axios.get(url).then(function (response) {
   /*important*/
   // console.log("Array: " + response.data[i].offers[0].url);
   // console.log("Ticket: " + response.data[i].offers[0].status, i)
-
+  // using for loop through the data
   for (i = 1; i < response.data.length; i++) {
     // console.log(response.data[i], i);
     // const artist = response.data[i].lineup;
@@ -25,6 +28,4 @@ axios.get(url).then(function (response) {
     console.log("country: " + response.data[i].venue.country, i);
 
   }
-
-
 })
