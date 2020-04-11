@@ -42,4 +42,30 @@ axios.get({
 
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+// let songName = "";
+
+// for (var i = 2; i < process.argv.length; i++) {
+
+//   if (i != process.argv.length - 1) {
+//     songName += process.argv[i] + " ";
+//   } else {
+//     songName += process.argv[i];
+//   }
+
+// }
+// // console.log(songName);
+
+// spotify.search({ type: 'track', query: songName }, function (err, data) {
+
+//   if (err) {
+//     return console.log('Error occurred: ' + err);
+//   }
+
+//   // console.log(data);
+//   // console.log(data.tracks.items[0].artists[0].name);
+// });
+
+
 
