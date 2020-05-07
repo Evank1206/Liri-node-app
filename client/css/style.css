@@ -1,0 +1,8 @@
+.basic{
+    text-align: center;
+    border: solid pink;
+}
+.three{
+    min-height: 950px;
+    border: solid black;
+}
