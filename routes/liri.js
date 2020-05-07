@@ -17,7 +17,7 @@ var spotify = new Spotify({
 // console.log(keys.spotify.id);
 // console.log(keys.spotify.secret);
 
-const song = "west life";
+const song = "West Life";
 /* Currently there are two methods available, SEARCH & REQUEST */
 spotify.search({
   type: 'track',

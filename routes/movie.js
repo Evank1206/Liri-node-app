@@ -22,5 +22,3 @@ axios.get(url).then(function (response) {
   console.log("Year: " + response.data.Year);
 
 });
-
-
