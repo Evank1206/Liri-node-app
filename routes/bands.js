@@ -10,7 +10,7 @@ router.get("/api/:id", (req, res) => {
   axios.get(url).then(reponse => {
 
     res.send(reponse.data)
-    console.log(reponse.data);
+    // console.log(reponse.data);
 
   }).catch(err => {
     res.send(err);
