@@ -4,8 +4,9 @@ const router = express.Router();
 // require axios npm package
 const axios = require("axios");
 
-router.get("/bands/:id", (req, res) => {
+router.get("/api/:id", (req, res) => {
   // res.send("helloo");
+  console.log('lala')
   var url = "http://rest.bandsintown.com/artists/" + req.params.id + "/events?app_id=codingbootcamp";
 
   axios.get(url).then(reponse => {
@@ -17,7 +18,7 @@ router.get("/bands/:id", (req, res) => {
     res.send(err);
     
   })
-  // res.send(req.params.id)
+  // res.send(req.params.id)v c c
 
 });
 

@@ -1,12 +1,15 @@
 const express = require("express");
 const app = express();
+var cors = require('cors');
+app.use(cors());
+
 const PORT = 5000;
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-const bandsRouter = require("./routes/bands");
-app.use("/band", bandsRouter);
+const bandRouter = require("./routes/apiRoutes");
+app.use("/", bandRouter);
 
 app.listen(PORT, (err)=>{
     if(err){
