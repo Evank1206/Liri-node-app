@@ -6,3 +6,8 @@
     min-height: 950px;
     border: solid black;
 }
+.display{
+    margin-top: 10px;
+    /* opacity: 0.3; */
+    /* background-color: lightgrey; */
+}
