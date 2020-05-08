@@ -8,7 +8,7 @@ const PORT = 5000;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-const bandRouter = require("./routes/apiRoutes");
+const bandRouter = require("./routes/bands");
 app.use("/", bandRouter);
 
 app.listen(PORT, (err)=>{

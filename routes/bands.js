@@ -1,25 +1,21 @@
 const express = require("express");
 const router = express.Router();
-
 // require axios npm package
 const axios = require("axios");
 
 router.get("/api/:id", (req, res) => {
-  // res.send("helloo");
-  console.log('lala')
+
   var url = "http://rest.bandsintown.com/artists/" + req.params.id + "/events?app_id=codingbootcamp";
 
   axios.get(url).then(reponse => {
-   
+
     res.send(reponse.data)
-     console.log(reponse.data);
+    console.log(reponse.data);
 
-  }).catch(err=>{
+  }).catch(err => {
     res.send(err);
-    
-  })
-  // res.send(req.params.id)v c c
 
+  })
 });
 
 module.exports = router;

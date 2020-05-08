@@ -6,16 +6,16 @@ $(document).ready(function(){
         console.log('click')
        const inputValue = $("#inputOne").val();
        
-       $.ajax({
-           type: "GET"
-       }).then(`http://127.0.0.1:5000/api/${inputValue}`, function(res){
-           console.log(res);
+    //    $.ajax({
+    //        type: "GET"
+    //    }).then(`http://127.0.0.1:5000/api/${inputValue}`, function(res){
+    //        console.log(res);
            
-       })
-    // axios.get(`http://localhost:5000/api/${inputValue}`).then(function(res){
-    //         console.log(res.data);
+    //    })
+    axios.get(`http://localhost:5000/api/:${inputValue}`).then(function(response){
+            console.log(response.data);
         
-    //     })
-    //     .catch(err => console.log(err))           
-    // });
+        })
+        .catch(err => console.log(err))           
+    });
 })
