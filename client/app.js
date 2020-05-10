@@ -10,6 +10,12 @@ $(document).ready(function () {
         axios.get(`http://localhost:5000/api/${inputValue}`).then(function (response) {
             console.log(response.data);
 
+            var image = $("<img height='90px' width='90px'/>");
+            image.addClass("ui imz")
+            image.attr("src", response.data[0].artist.thumb_url);
+            $(".imageDiv").append(image);
+            $(".imz").append(response.data[0].artist.thumb_url)
+                     
 
         //     for (let i = 0; i < response.data.length; i++) {
 
@@ -31,6 +37,6 @@ $(document).ready(function () {
 
         //     }
         // }).catch(err => console.log(err));
-
+    });
     });
 })
