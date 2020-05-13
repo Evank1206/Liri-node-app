@@ -20,7 +20,7 @@ $(document).ready(function () {
             console.log(response.data[0].datetime);
 
 
-            var image = $("<img height='90px' width='90px'/>");
+            var image = $("<img height='200px' width='200px'/>");
             image.addClass("ui imz")
             image.attr("src", response.data[0].artist.thumb_url);
             $(".imageDiv").append(image);
