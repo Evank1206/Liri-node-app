@@ -1,91 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css import -->
-    <link rel="stylesheet" href="./css/style.css"/>
-    <!-- semantic.ui import -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
 
-    <title>Api Aplication</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css import -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- semantic.ui import -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+
+  <title>Api Aplication</title>
 </head>
+
 <body>
     <!-- main -->
     <div class="ui vertically divided grid">
-    <!-- three inline carts -->
-        <div class="three column row">
-            <!-- section one -->
-            <div class="ui blue basic column">
-              <h1>Bands In Town</h1>
-              <div class="ui icon input">
-                <input type="text" placeholder="Search..." id="inputOne">
-                <i class="circular search link icon" id="btn"></i>
+      <!-- three inline carts -->
+      <div class="three column row">
+        <!-- section one -->
+        <div class="ui blue basic column" id="basic">
+          <h1>Bands In Town</h1>
+          <div class="ui icon input">
+            <input type="text" placeholder="Search..." id="inputOne">
+            <i class="circular search link icon" id="btn"></i>
+          </div>
+
+          <div class="ui items" id="items">
+
+      <!-- <div class="item">
+              <div class="imageDiv">
               </div>
-              <!-- <div class="display">
-
-                <div class="ui items">
-
-                  <div class="item">
-  
-                    <div class="imageDiv"> <div class="today"></div> </div>
-                    
-                    <div class="content">
-
-                      <div class="band"></div>
-                      <br>
-                      <div class="ShowTime"></div>
-                      <br>
-                      <div class="palace"></div>
-                      <br>
-                      <div class="city"></div>
-                      <br>
-                      <div class="country"></div>
-                      <br>
-                      <div class="button"></div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div> -->
-            </div>
-            <!-- band name
-                 date
-                 place name
-                 city name
-                 country
-            -->
-            <!-- section two -->
-            <!-- <div class="ui green basic column">
-              <h1>Movies In Town</h1>
-              <div class="ui icon input">
-                <input type="text" placeholder="Search..." id="inputTwo">
-                <i class="circular search link icon"></i>
+              <div class="content">
+                <div class="band"></div>
+                <div class="ShowTime"></div>
+                <div class="palace"></div>
+                <div class="city"></div>
+                <div class="country"></div>
+                <div class="button"></div>
+              </div>
+              <div class="extra content">
+                <span>today's date</span>
               </div>
             </div> -->
-            <!-- section three -->
-            <!-- <div class="ui orange basic column">
-              <h1>Spotify Music</h1>
-              <div class="ui icon input">
-                <input type="text" placeholder="Search..." id="inputThree">
-                <i class="circular search link icon"></i>
-              </div>
-            </div> -->
+
+          </div>
         </div>
-          
-    </div>
-    
-      
+      <!-- </div> -->
 
-      
-    
-    <!-- <script src="semantic/dist/semantic.min.js"></script> -->
-    <!-- jquery cdn  -->
-    <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
-    <!-- axios -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <!-- /* section two */ -->
+      <!-- <div class="ui green basic column">
+        <h1>Movies In Town</h1>
+        <div class="ui icon input">
+          <input type="text" placeholder="Search..." id="inputTwo">
+          <i class="circular search link icon"></i>
+        </div>
+      </div> -->
+
+      <!-- /* section three */-->
+      <!-- <div class="ui orange basic column">
+        <h1>Spotify Music</h1>
+        <div class="ui icon input">
+          <input type="text" placeholder="Search..." id="inputThree">
+          <i class="circular search link icon"></i>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+
+  <!-- jquery cdn  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!-- javaScript import -->
-    <script src="./app.js"></script>
+  <script src="./app.js"></script>
 </body>
+
 </html>
